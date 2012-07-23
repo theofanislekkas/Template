@@ -109,6 +109,9 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
 )
 
+#provide our get_profile()
+AUTH_PROFILE_MODULE = 'users.Registrant'
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -119,6 +122,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'taggit',
     'blog',
+    'users',
 )
 
 # A sample logging configuration. The only tangible logging
